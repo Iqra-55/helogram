@@ -1,0 +1,77 @@
+name: HeloGram
+description: HeloGram Chat App
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- Existing packages ---
+  provider: ^6.1.1
+  shared_preferences: ^2.2.2
+  emoji_picker_flutter: ^4.2.0
+  intl: ^0.18.1
+  photo_view: ^0.14.0
+  camera: ^0.11.0+2
+  image_picker: ^1.1.2
+  path_provider: ^2.1.5
+  path: ^1.9.0
+  photo_manager: ^3.6.0
+  video_player: ^2.9.1
+  file_picker: ^8.1.0
+  # --- NEW: Added HTTP Package (Crucial for Online Audio Playback) ---
+  http: ^1.2.0
+
+  # --- Voice Feature Stack ---
+  audio_waveforms: ^2.0.2
+  
+  # Permissions
+  permission_handler: ^11.3.1
+  audioplayers: ^6.7.1
+  supabase_flutter: ^2.17.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/appstore.png"
+  adaptive_icon_background: "#2D5A4A"
+  adaptive_icon_foreground: "assets/icons/appstore.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/wallpapers/
+    - assets/images/dark.png
+    - assets/images/light.png
+    - assets/images/fav navy.png
+    - assets/images/fav green.png
+    - assets/images/all light.png
+    - assets/images/all dark.png
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+    - family: GreatVibes
+      fonts:
+        - asset: assets/fonts/GreatVibes-Regular.ttf
